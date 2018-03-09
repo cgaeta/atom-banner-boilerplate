@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    ".tree-view .directory .name": [
+      {
+        "label": "Copy Banner Setup",
+        "command": "setup-banner-package:copy"
+      },
+      {
+        "label": "Install Dependencies",
+        "command": "setup-banner-package:install"
+      },
+      {
+        "label": "Set Directory",
+        "command": "setup-banner-package:setDirectory"
+      },
+      {
+        "label": "Build",
+        "command": "setup-banner-package:build"
+      },
+      {
+        "label": "Copy Contents-Loader",
+        "command": "setup-banner-package:contents-loader"
+      }
+    ]
+  }
+}
