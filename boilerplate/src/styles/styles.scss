@@ -1,0 +1,67 @@
+$width:   728px !default;
+$height:  90px !default;
+$bg:      #ffffff !default;
+
+@function max-width($w) {
+  @return if($w < $width, $w, $width);
+}
+
+@function min-left($l) {
+  @return if($l >= 0, $l, 0);
+}
+
+/* ----------------------------------- SizMek */
+body { margin: 0px; }
+
+#button {}
+
+/*If needed*/
+#button:hover,
+#button:active {}
+
+img,
+p,
+#ad div { position: absolute;}
+
+#ad {
+  position: auto;
+  display: block;
+  /*border: rgb(2, 105, 55) 1px solid; */
+  overflow: hidden;
+  width: $width;
+  height: $height;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#banner {
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $bg;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*background*/
+
+a {
+  text-decoration: none;
+  cursor:pointer;
+}
+
+#background, #bg {
+  width: $width;
+  height: $height;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+@import "exports.scss";
